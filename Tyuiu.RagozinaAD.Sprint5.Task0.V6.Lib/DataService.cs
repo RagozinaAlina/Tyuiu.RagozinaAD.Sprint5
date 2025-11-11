@@ -6,7 +6,7 @@ namespace Tyuiu.RagozinaAD.Sprint5.Task0.V6.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
+            string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask1.txt" });
             double y = Math.Round((double)x / (Math.Sqrt((double)x * (double)x + (double)x)), 3);
             File.WriteAllText(path, Convert.ToString(y));
             return path;
