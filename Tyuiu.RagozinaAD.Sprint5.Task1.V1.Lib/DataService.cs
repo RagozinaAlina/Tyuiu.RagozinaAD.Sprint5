@@ -20,10 +20,9 @@ namespace Tyuiu.RagozinaAD.Sprint5.Task1.V1.Lib
             string strY;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Round(((5 * x + 2.5) / Math.Sin(x) + 2) + 2 * x + 2,2);
+                y = Math.Round((5 * (double)x + 2.5) / (Math.Sin((double)x) + 2) + 2 * (double)x + 2, 2);
                 strY = Convert.ToString(y);
-
-                if (x!=stopValue )
+                if (x != stopValue)
                 {
                     File.AppendAllText(path, strY + Environment.NewLine);
                 }
