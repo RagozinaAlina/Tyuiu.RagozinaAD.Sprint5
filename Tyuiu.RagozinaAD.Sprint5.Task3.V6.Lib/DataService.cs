@@ -8,7 +8,12 @@ namespace Tyuiu.RagozinaAD.Sprint5.Task3.V6.Lib
         {
             string path = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask3.bin" });
             double y = Math.Round((double)x / (Math.Sqrt((double)x * (double)x + (double)x)), 3);
-            File.WriteAllText(path, Convert.ToString(y));
+
+            using (BinaryWriter writer =new BinaryWriter (File.Open (path ,FileMode.OpenOrCreate)))
+            {
+                writer.Write(BitConverter.GetBytes(y));
+            }
+            
             return path;
         }
     }
