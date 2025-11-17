@@ -6,9 +6,28 @@ namespace Tyuiu.RagozinaAD.Sprint5.Task5.V2.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            string strX = File.ReadAllText(path).Replace(".", ",");
-            double res = Math.Round((1 / (Math.Cos(Convert.ToDouble(strX)) + Convert.ToDouble(strX))) - 4.12 * Convert.ToDouble(strX), 3);
-            return res;
+            double sum = 0;
+            int count = 0;
+            int f;
+
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    line = line.Replace(",", "");
+                    int[] a = line.Split(' ').Select(int.Parse).ToArray();
+                    for (int i = 0; i < a.Length; i++)
+                    {
+                        if (Convert.ToInt32(a[i]) > 0)
+                        {
+                            sum += Convert.ToInt32(a[i]);
+                            count++;
+                        }
+                    }
+                }
+            }
+            return Math.Round((sum / count), 3);
         }
     }
 }
