@@ -21,8 +21,8 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        string path = @"C:\Users\Алина\AppData\Local\Temp\OutPutFileTask7.txt"; ;
-        string pathSaveFile = Path.Combine(Path.GetTempPath(), "OutPutDataFileTask7V1.txt");
+        string path = @"C:\DataSprint5\InPutDataFileTask7V1.txt";
+        string pathSaveFile = @"C:\DataSprint5\OutPutDataFileTask7V1.txt";
 
         Console.WriteLine("Данные находяться в файле: " + path);
 
