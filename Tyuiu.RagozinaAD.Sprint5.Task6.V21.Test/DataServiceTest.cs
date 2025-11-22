@@ -8,7 +8,7 @@ namespace Tyuiu.RagozinaAD.Sprint5.Task6.V21.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\Users\Алина\AppData\Local\Temp\InPutDataFileTask6V21.txt";
+            string path = @"C:\Users\Алина\Desktop\source\repos\Tyuiu.RagozinaAD.Sprint5\DataSprint5\InPutDataFileTask6V21.txt";
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileexists = fileInfo.Exists;
