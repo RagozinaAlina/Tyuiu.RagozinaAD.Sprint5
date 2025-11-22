@@ -11,10 +11,4 @@
     <ProjectReference Include="..\Tyuiu.RagozinaAD.Sprint5.Task7.V1.Lib\Tyuiu.RagozinaAD.Sprint5.Task7.V1.Lib.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="tyuiu.cources.programming.interfaces">
-      <HintPath>..\tyuiu.cources.programming.interfaces.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>
