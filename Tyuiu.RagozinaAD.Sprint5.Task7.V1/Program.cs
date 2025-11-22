@@ -1,4 +1,5 @@
-﻿using Tyuiu.RagozinaAD.Sprint5.Task7.V1.Lib;
+﻿using System.Diagnostics;
+using Tyuiu.RagozinaAD.Sprint5.Task7.V1.Lib;
 internal class Program
 {
     private static void Main(string[] args)
@@ -23,7 +24,6 @@ internal class Program
 
         string path = @"C:\DataSprint5\InPutDataFileTask7V1.txt";
         string pathSaveFile = @"C:\Users\Алина\source\repos\Tyuiu.RagozinaAD.Sprint5\Tyuiu.RagozinaAD.Sprint5.Task7.V1\bin\Debug\net8.0\OutPutDataFileTask7V1.txt";
-
         Console.WriteLine("Данные находяться в файле: " + path);
 
         Console.WriteLine("***************************************************************************");
