@@ -21,7 +21,7 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        string path = @"C:\DataSprint5\InPutDataFileTask4V1.txt";
+        string path = @"C:\Users\Алина\Desktop\source\repos\Tyuiu.RagozinaAD.Sprint5\DataSprint5\InPutDataFileTask4V1.txt";
         Console.WriteLine("Данные находятся в файле: " + path);
 
         Console.WriteLine("*****************************************************************************************************");
