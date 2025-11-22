@@ -7,7 +7,7 @@ namespace Tyuiu.RagozinaAD.Sprint5.Task3.V6.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
+            string path = @"C:\Users\Алина\Desktop\source\repos\Tyuiu.RagozinaAD.Sprint5\Tyuiu.RagozinaAD.Sprint5.Task3.V6\bin\Debug\net8.0\OutPutDataFileTask3V6.bin";
             double y = Math.Round((double)x / (Math.Sqrt((double)x * (double)x + (double)x)), 3);
 
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8))
