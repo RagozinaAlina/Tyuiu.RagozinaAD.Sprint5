@@ -22,7 +22,7 @@ internal class Program
         Console.WriteLine("***************************************************************************");
 
         string path = @"C:\Users\Алина\Desktop\source\repos\Tyuiu.RagozinaAD.Sprint5\DataSprint5\InPutDataFileTask7V1.txt";
-        string pathSaveFile = @"C:\Users\Алина\Desktop\source\repos\Tyuiu.RagozinaAD.Sprint5\DataSprint5\OutPutDataFileTask7V1.txt";
+        string pathSaveFile = Path.Combine(new string[] { Path.GetTempPath(), "OutPutFileTask7.txt" });
         Console.WriteLine("Данные находяться в файле: " + path);
 
         Console.WriteLine("***************************************************************************");
